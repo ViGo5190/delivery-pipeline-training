@@ -9,3 +9,11 @@ script:
   - source env.sh && npm run test
 notifications:
   slack: devops-training-spb:1UP0AZO1Lyrhk3AnP9NsjzZS
+deploy:
+  provider: heroku
+  api_key:
+    secure: k7d+2mXWQ9IqoUqe04fDxV68zOY80B23ncABtUTbj0kuwAzL1Itu2Al7lat/FBNKV6vLO7QvaiJW5mRhoqHExiynUTTMScA6XoPsoPaAorrfSoCelxKpTDEIPm86pHjIyC0uAwBMA/mWwnTIn3bNBlD+84abcjAlYdq22/xtdjBFeaw+UapWeZ8jnQ2TYl0yOQdR6+Clu4IzQS8ZiAAqI9WCjL9PQxyXR4YfRMmAnC8Flr4EHaYDEMYJJszqZevVFV3KOCSXkSGlEWlrq3G+PK7M68oMwhdFAOM1SUAj/TDr30ltMm6pzJVAfuPpHLyzmlz4rB4QjZ1a1f6CkAaKXRc2MR57O8arhfue1xSb/0WuifITvAEGDhym1lROyoQ3F1ViDpZEWp8I5Cq1a87jM+0C0eLztFOpxz/92gbQ95eVBiF3aAwqZ17JcPi//AsQ+3aN/4jz7apBRZaw719tDcdC4HgE2u7DrPUFi3ikUmd+Qk69AvmaA2x/iaBG5Iuf3tp7PcayfLldZE/VPOfHGdP38YPta0tlksc2wrTNqPcPvfsfDxuq0GK6RdMj69G7LSsV4UzbEOI/0GS44jZ0XxcfoF6l8IDpbl2WSzl+oAIuQLUNhTKlqmn1QxfnLIeQGEreftPpcUnEN8fF1QNfSwqjm/O6XgwopMDHdowRTFk=
+  app: shrouded-garden-35145
+  on:
+    repo: ViGo5190/delivery-pipeline-training
+    branch: develop
