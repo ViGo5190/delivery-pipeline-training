@@ -8,4 +8,4 @@ before_script:
 script:
   - source env.sh && npm run test
 notifications:
-  slack: slack: devops-training-spb:1UP0AZO1Lyrhk3AnP9NsjzZS
+  slack: devops-training-spb:1UP0AZO1Lyrhk3AnP9NsjzZS
